@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        
+        
+    <style>
+        .form-container {
+            font-family:serif;
+            margin: 50px;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 100px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 20vh;
+        }
+        .form-containerhead {
+            font-family:serif;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 100px;
+            color: rgb(0, 4, 255);
+            text-align: center;
+        }
+        .form-signin {
+            width: 100%;
+            max-width: 500px;
+            padding: 2rem;
+            margin: auto;
+            background-color: #f3f3f3;
+        }
+    </style>
+    <body style="background-color: #37517e;">
+        <div class="form-container">
+            EMPLOYEE STORAGE SYSTEM PROTOSS TECHNOLOGY COMPANY LIMITED
+            <br>
+            ระบบจัดเก็บข้อมูลพนักงานบริษัท โปรทอส เทคโนโลยี จํากัด
+        </div>
+        <div class="form-containerhead">
+        <form class="form-signin" method="post" action="/login">
+            ลงชื่อเข้าใช้งาน
+            <br>
+            <div class="form-group">
+                <label class="sr-only" for="username">Username</label>
+                <input class="form-control" type="text" name="username" id="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">เข้าสู่ระบบ</button>
+            <a class="btn btn-link" href="/register">Don't have an account?</a>
+        </form>
+    </div>
+
+</body>
+</header>
+</html>
